@@ -8,6 +8,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ModelRepository extends PagingAndSortingRepository<Model, String> {
 
-    List<Model> findByField(String content);
-
+    List<Model> findByAuthor(String author);
 }
